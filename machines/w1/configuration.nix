@@ -4,13 +4,13 @@
     ../../modules/shared.nix
   ];
   # Put your username here for login
-  users.users.user.name = "user";
+  users.users.user.name = "manuel";
 
   # Set this for clan commands use ssh i.e. `clan machines update`
   # If you change the hostname, you need to update this line to root@<new-hostname>
   # This only works however if you have avahi running on your admin machine else use IP
   clan.core.networking.targetHost = "root@w1.zroot.org";
-
+  clan.core.networking.buildHost = "root@w1.zroot.org";
   # You can get your disk id by running the following command on the installer:
   # Replace <IP> with the IP of the installer printed on the screen or by running the `ip addr` command.
   # ssh root@<IP> lsblk --output NAME,ID-LINK,FSTYPE,SIZE,MOUNTPOINT
