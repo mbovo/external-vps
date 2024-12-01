@@ -4,7 +4,7 @@
     ../../modules/shared.nix
   ];
   # Put your username here for login
-  users.users.user.name = "root";
+  users.users.user.name = "user";
 
   # Set this for clan commands use ssh i.e. `clan machines update`
   # If you change the hostname, you need to update this line to root@<new-hostname>

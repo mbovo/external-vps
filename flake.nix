@@ -1,11 +1,10 @@
 {
-  description = "<Put your description here>";
+  description = "Testing clan on w1 vps";
 
   inputs.clan-core.url = "https://git.clan.lol/clan/clan-core/archive/main.tar.gz";
   inputs.nixpkgs.follows = "clan-core/nixpkgs";
-
   outputs =
-    { self, clan-core, ... }:
+    { self, clan-core, ... }@inputs:
     let
       # Usage see: https://docs.clan.lol
       clan = clan-core.lib.buildClan {
